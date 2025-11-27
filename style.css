@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px 20px;
+    background-color: #ffab19; 
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: white;
+    color: #ffab19;           
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header nav a:hover {
+    background-color: #ffe0b3; 
+    transform: translateY(-2px);
+}
+
+header nav a.active {
+    background-color: #4c97ff; 
+    color: white;
+}
+
+.section {
+    background-color: white; 
+    margin: 30px auto;
+    padding: 30px 40px;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+.section h2 {
+    color: #4c97ff;
+    font-size: 26px;
+    margin-bottom: 10px;
+    border-left: 6px solid #4c97ff;
+    padding-left: 10px;
+}
+
+
+.description {
+    max-width: 900px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+
+.project {
+    width: 230px;
+    text-align: center;
+    align-items: center; 
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.project p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #9966ff; 
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    color: #ffab19; 
+    border: 2px solid #ffab19;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 9999; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #ffab19;
+    color: white;
+}
+
+
